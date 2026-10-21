@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Q's Archive</title>
+		<meta name="description" content="Six artifacts from the voyages to the Moon before the Great Separation, with narration and animation. An interactive web exhibit by Franchan.">
+		<meta name="theme-color" content="#2d283a">
+		<link rel="stylesheet" href="https://use.typekit.net/rvb0wap.css">
+		<link href="styles/style.css" rel="stylesheet">
+		<style>
+			#mainDisplay{
+				display: none;
+			}
+			#loading{
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="loading">
+
+			<h5 id="loadingText">LOADING</h5>
+
+			<div id="enterPrompt" hidden>
+				<button id="enterBtn" type="button">ENTER</button>
+				<p>best experienced with sound</p>
+				<button id="enterSilent" type="button">enter without sound</button>
+			</div>
+
+		</div>
+
+		<div id="mainDisplay">
+			<!-- this canvas is the underlying layer to the whole page.
+			All models are loaded on this canvas and will be displayed
+			once the visitor scrolls to the respecitve section of the page. 
+			-->
+			<canvas id="c" aria-hidden="true"></canvas>
+
+			<button id="main-btn" type="button" aria-label="Turn sound on">
+				<img class="soundOn" src="assets/icons/sound-icon-empty.svg" alt="">
+			</button>
+
+			<!-- Sidebar navigation -->
+			<a href="index.html" id="homeNav">Q's Archive</a>
+			<nav aria-label="Exhibit sections">
+				<a href="#intro" id="link0"><hr><span class="menu">Introduction</span></a>
+				<a href="#boat" id="link1"><hr><span class="menu">Boat Fragment</span></a>
+				<a href="#dress" id="link2"><hr><span class="menu">Dress Fragment</span></a>
+				<a href="#syn1" id="link3"><hr><span class="menu">Ladder Fragment</span></a>
+				<a href="#Nar4" id="link4"><hr><span class="menu">A Bucket</span></a>
+				<a href="#syn2" id="link5"><hr><span class="menu">An Oar</span></a>
+				<a href="#headdress" id="link6"><hr><span class="menu">A Headdress</span></a>
+				<a href="#about" id="link7"><hr><span class="menu">The Curators</span></a>
+			</nav>
+
+
+			<section id="intro">
+ 
+				<div>
+					<div class="fadeIn">
+						<h3 id="Nar0" class="text-wrapper">
+							<span>« There were nights when the Moon was full </span><br>
+							<span>and very, very low, and the tide was so high </span><br>
+							<span>that the Moon missed a ducking in the sea</span><br>
+							<span>by a hair's-breadth; let's say a few yards anyway. »</span>
+						</h3>
+					</div>
+	
+						
+					<div id="scrollIcon">
+						<img id="icon1" src="assets/icons/scroll-icon.svg" alt="">
+						<h6>scroll down</h6>
+					</div>
+	
+	
+					<div id="synopsis1" class="synopsis">
+						<h4 class="slideIn">« Climb up on the Moon? Of course we did. »</h4>
+						<p class="left">
+							As documented in <i>The Distance to the Moon</i>,
+							Q was part of a crew that went up to the moon to harvest moon milk. 
+							The time was before the Great Separation:
+							the moon and the earth were so close, 
+							that the crew would row out to the sea
+							and climb onto the moon with a ladder. 
+						</p>
+					</div>
+				</div>
+
+
+				<div>
+					<iframe id="Vid0" title="Animation: Intro"
+					src="https://player.vimeo.com/video/424105184?title=0&byline=0&portrait=0" width="1920" height="1072" frameborder="0" allow="autoplay"></iframe>
+				</div>
+
+			</section>
+
+
+			<section id="one">
+
+				<div id="boat" class="artifact">
+
+					<div id="label1" class="wallLabelR">
+						<h4>Boat Fragment</h4>
+						<p>
+							The boat was constructed from empty plastic bottles. 
+							The crew has tied various inflated objects to the boat to keep it afloat. 
+							These buoys and weights were adjusted according to the tides. 
+						</p>
+					</div>
+
+					<div id="holdIcon">
+						<img id="icon2" src="assets/icons/hold-icon.svg" alt="">
+						<h6>hold and drag</h6>
+					</div>
+
+				</div>
+
+				<div class="fadeIn">
+					<h3 id="Nar1" class="text-wrapper">
+						<span>« We used to go out with those little rowboats, </span><br>
+						<span>long and light, </span>
+						<span>tied together from bottles. </span><br>
+						<span>They held quite a few of us: </span>
+						<span>me, </span>
+						<span>Captain Vhdvhd,<br></span>
+						<span>his wife,</span>
+						<span>my deaf cousin,</span>					
+						<span>and sometimes little Xlthlx. »</span>					
+					</h3>
+				</div>
+		
+				<div>
+					<iframe id="Vid1" title="Animation: Boat" loading="lazy"
+					src="https://player.vimeo.com/video/424108675" width="1920" height="1072" frameborder="0" allow="autoplay"></iframe>
+				</div>
+
+			</section>
+
+
+
+			<section id="two">
+
+				<div id="dress" class="artifact">
+					<div class="wallLabelR">
+						<h4>Dress Fragment</h4>
+						<p>
+							Little Xlthlx amused herself by getting caught between 
+							the moon and the ocean. Her dress was assembled from 
+							plastic sheets that bloomed like a flower when suspended 
+							midair. 
+							In her flight, schools of faunas have melted into her dress 
+							and sealed themselves into little pockets of plastic. 
+						</p>
+					</div>
+				</div>
+
+				<div class="fadeIn">
+					<h3 id="Nar2" class="text-wrapper">
+						<span>« We rowed hard, </span>
+						<span>to keep up with the child: </span><br>
+						<span>the Moon ran off in her ellipse, </span>
+						<span>dragging that <br> swarm of </span>
+						<span>marine fauna through the sky, </span><br>
+						<span>and a train of long, </span>
+						<span>entwined seaweeds,</span><br>
+						<span>and Xlthlx hanging there in the midst. »</span>
+					</h3>
+				</div>
+
+				<div>
+					<iframe id="Vid2" title="Animation: Dress" loading="lazy" src="https://player.vimeo.com/video/424110019?title=0&byline=0&portrait=0" width="1920" height="1072" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+				</div>
+
+			</section>
+
+
+
+			<section id="three">
+
+				<div id="syn1" class="synopsis">
+					<h4 class="slideIn">« Every shiny fish is floating, floating; 
+						and every dark fish is at the bottom, at the bottom of the sea ... »</h4>
+					<p class="left">
+						Nettles of feelings grew under the moon. 
+						In the long voyages, Q had fallen in love 
+						with the captain’s wife - Mrs.Vhdvhd, 
+						but Mrs.Vhdvhd was in love with Q’s deaf cousin, 
+						who was only intimate with the moon. 
+						As Q recounted, she had even seen the Moon come 
+						toward her cousin, as he held out his hands. 
+					</p>
+				</div>
+
+				<div id="ladder" class="artifact">
+					<div class="wallLabelR">
+						<h4>Ladder Fragment</h4>
+						<p>
+							The ladder was tied together from pvc pipes, 
+							aluminum pipes and wood. During the voyage, 
+							the crew would keep the ladder floating next 
+							to the boat. 
+							During the Great Separation, the ladder 
+							became just short of reaching the moon, resulting
+							in Q and Mrs.Vhdvhd's estrangement on the moon.
+						</p>
+					</div>
+				</div>
+
+				<div class="fadeIn">
+					<h3 id="Nar3" class="text-wrapper">
+						<span>« From the top of the ladder, </span>
+						<span>standing erect <br>on the last rung, </span>
+						<span>you could just touch the Moon <br>if you held your arms up. </span>
+						<span>We had taken <br>the measurements carefully. »</span>
+					</h3>
+				</div>
+				
+				<div>
+					<iframe id="Vid3" title="Animation: Ladder" loading="lazy" src="https://player.vimeo.com/video/424111730?color=cc00ff&title=0&byline=0&portrait=0" width="1920" height="1072" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+				</div>
+
+			</section>
+
+
+
+			<section id="four">
+
+				<div id="bucket" class="artifact">
+					<div class="wallLabelR">
+						<h4>A Bucket</h4>
+						<p>
+							Buckets were constructed from a variety of collapsible materials.
+							At the time, moon-milk was the major source of nutrition. Q and Mrs.Vhdvhd, 
+							when stranded on the moon, were sustained by the abundance of moon-milk. 	
+						</p>
+					</div>
+				</div>
+
+				<div class="fadeIn">
+					<h3 id="Nar4" class="text-wrapper">
+						<span>« Now, </span>
+						<span>you will ask me what in the world</span><br>
+						<span>we went up on the Moon for.</span>
+						<span>We went to <br>collect the milk, </span>
+						<span>with a big spoon and a bucket. »</span>
+					</h3>
+				</div>
+
+				<div>
+					<iframe id="Vid4" title="Animation: Bucket" loading="lazy" src="https://player.vimeo.com/video/451671658" width="1920" height="1072" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+				</div>
+
+			</section>
+
+
+
+			<section id="five">
+
+				<div id="syn2" class="synopsis">
+					<h4 class="slideIn">« This had never happened before; 
+						the Captain's wife had never gone up on the Moon. »</h4>
+					<p class="left">
+						In one expedition, the crew noticed that the moon was slowly drifting 
+						apart from earth. Mrs.Vhdvhd, upon this realization, went up to 
+						the moon in anticipation to be stranded with Q’s cousin. 
+						But Q's cousin, undeterred by the waning 
+						attraction between the earth and moon, returned to the boat. 
+						Q herself was stranded with Mrs.Vhdvhd instead. 
+					</p>
+				</div>
+
+				<div id="oar" class="artifact">
+					<div class="wallLabelR">
+						<h4>An Oar</h4>
+						<p>
+							Common materials for oar included electric fan leaves, 
+							rackets, plastic pipes, and clothing poles. 
+							When embarking on a voyage, the crew always brought 
+							extra pieces and ropes, for oars broke easily. 
+							During the Great Separation, oars were used to rescue 
+							the stranded crew from the Moon. 
+						</p>
+					</div>
+				</div>
+
+				<div class="fadeIn">
+					<h3 id="Nar5" class="text-wrapper">
+						<span>« This is how we did it: </span>
+						<span>we hurled each spoonful <br>into the air with both hands,</span>
+						<span>using the spoon <br>as a catapult. </span>
+						<span>The cheese flew, </span>
+						<span>and if we had <br>thrown it hard enough, </span>
+						<span>it stuck to the ceiling, </span><br>
+						<span>I mean the surface of the sea. </span>
+						<span>Once there, </span><br>
+						<span>it floated, </span>
+						<span>and the crew would <br>use their oars </span>
+						<span>to pull it into the boat. »</span>
+					</h3>
+				</div>
+
+				<div>
+					<iframe id="Vid5" title="Animation: Oar" loading="lazy" src="https://player.vimeo.com/video/451671681" width="1920" height="1072" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+				</div>
+
+
+			</section>
+
+
+
+
+			<section id="six">
+
+				<div id="headdress" class="artifact">
+					<div class="wallLabelR">
+						<h4>A Headdress</h4>
+						<p>
+							Exquisitely built from plastic bottles and cups, the headdress 
+							was likely a resonance chamber for Mrs.Vhdvhd, who was a 
+							sensational harp player. Mrs.Vhdvhd had likely dropped her headdress 
+							when she left for the moon.
+						</p>
+					</div>
+				</div>
+
+				<div class="fadeIn">
+					<h3 id="Nar6" class="text-wrapper">
+						<span>« It didn't take me long to realize </span>
+						<span>whom the lady <br>kept looking at insistently: </span>
+						<span>when my cousin's hands <br>clasped the satellite, </span>
+						<span>I watched Mrs. Vhdvhd, <br></span>
+						<span>and in her eyes </span>
+						<span>I could read the thoughts </span>
+						<span>that <br>my cousin's familiarity with the Moon</span>
+						<span>was arousing in her. »</span>
+					</h3>
+				</div>
+				
+
+				<div>
+					<iframe id="Vid6" title="Animation: Headdress" loading="lazy" src="https://player.vimeo.com/video/451671699" width="1920" height="1072" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+				</div>
+
+			</section>
+
+
+			<section>
+				<div class="synopsis">
+					<h4 class="slideIn">« Torn from its earthly soil, my love now knew only the heart-rending nostalgia for what it lacked... »</h4>
+					<p class="left">
+						When the crew finally came to their rescue, 
+						Q seized the first chance to return to earth. 
+						But none could persuade Mrs.Vhdvhd to leave the moon. 
+						She knew that if Q’s cousin loved the moon so much, 
+						this was the only way his gaze would follow her. 
+						On the moon she remained, as the crew watched the moon drift away. 
+					</p>
+				</div>
+
+				<div>
+
+				</div>
+
+			</section>
+			
+
+			<footer id="about">
+
+				<img id="icon3" src="assets/icons/arrow.svg" alt="">
+				<img id="profile" src="assets/imgs/profile-pic.png" alt="Video-call portrait of the curators, Franziska Mack and Yichan Wang">
+				<a href="https://franziskamack.com/">
+					<h4>franziskamack.com</h4>
+				</a>
+				<a href="https://yichanwang.me/">
+					<h4>yichanwang.me</h4>
+				</a>
+				<p>Franchan is a cyberduo speculating on human activities 
+					preceding 2579AD, an era termed "where history had not started".
+					The anthropologist duo, F. Mack and Y. Wang, conducts research on 
+					prehistoric crises and the ensuing variations of recent futures. 
+				</p>
+
+			</footer>
+
+		</div>
+
+
+		<script src="js/vendor/jQuery.js"></script>
+		<script src="js/vendor/jScrollability.js"></script>
+		<script src="js/vendor/three/three.js"></script>
+		<script src="js/vendor/three/OrbitControls.js"></script>
+		<script src="js/vendor/three/GLTFLoader.js"></script>
+		<script src="js/vendor/three/DRACOLoader.js"></script>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<script src="js/sound.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/ui.js"></script>
+
+	</body>
+
+</html>

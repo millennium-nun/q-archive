@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q's Archive</title>
+    <meta name="description" content="An archive of artifacts and memories preserved by Q, a survivor of the Great Separation. An interactive web exhibit by Franchan (F. Mack and Y. Wang).">
+    <meta property="og:title" content="Q's Archive">
+    <meta property="og:description" content="Artifacts and memories preserved by Q, a survivor of the Great Separation.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#2d283a">
+    <link rel="stylesheet" href="https://use.typekit.net/rvb0wap.css">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="indexDisplay">
+
+        <div>
+            <h1>
+                Q's Archive
+            </h1>
+
+            <p id="opening">
+                Curated by archaeologists Franchan,
+                this archive consists of artifacts and
+                memories dating back to 2579AD.
+                On exhibit here are personal memorabilia
+                preserved by Q, a survivor of the Great Separation,
+                the interviewee in <i>The Distance to the Moon</i> -
+                a rare piece of oral history that recollects the events
+                leading up to the Great Separation.
+            </p>
+
+            <a href="main.html" id="mainLink">
+                Start Exploring <img id="arrowIcon" src="assets/icons/arrow.svg" alt="">
+            </a>
+
+        </div>
+
+        <button id="index-btn" type="button" aria-label="Turn sound on">
+            <img class="soundOn" src="assets/icons/sound-icon-empty.svg" alt="">
+        </button>
+
+    </div>
+
+    <script src="js/sound.js"></script>
+    <script>
+        QSound.bindButton(document.getElementById("index-btn"));
+        QSound.tryPlay();
+    </script>
+
+</body>
+</html>
